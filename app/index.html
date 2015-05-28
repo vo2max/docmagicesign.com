@@ -1,0 +1,180 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link href='//fonts.googleapis.com/css?family=Signika+Negative:300,400,600,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,600,700,300' rel='stylesheet' type='text/css'>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/material.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap-material-design/dist/css/ripples.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <!-- link rel="stylesheet" href="styles/main.css" -->
+    <link rel="stylesheet" href="styles/es-main.css">    
+    <link rel="stylesheet" href="styles/es-responsive.css">   
+    <!-- endbuild -->
+</head>
+
+<body ng-app="esignApp">
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+    <!-- Add your site or application content here -->
+
+    <nav class="navbar navbar-fixed-top" es-navbar>
+    
+        <div class="container">
+      
+            <div class="navbar-header pull-left">
+                <a class="navbar-brand" href="#">
+                    <img src="images/esign-sm.png">
+                </a>
+            </div>
+            
+            <div class="navbar-right visible-xs">
+                <div class="dropdown pull-right">
+                    <a class="btn btn-default dropdown-toggle navbar-btn" type="button" id="menu" data-toggle="dropdown">
+
+                        <span class="icon-bars-button">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </span>
+                    </a>                    
+                    
+                    <ul class="dropdown-menu" role="menu" aria-labelledby="menu">
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-user fa-fw"></i> Sign Up Free</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-sign-in fa-fw"></i> Login</a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-question fa-fw"></i> Help</a></li>
+                    </ul>
+                </div>              
+            </div>
+
+            <div class="navbar-right hidden-xs">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="text-right"><button class="btn btn-primary navbar-btn" role="button">Sign Up Free</button>
+                    <li class="text-right"><a href="#/" class="link">Login</a></li>
+                    <li class="text-right">
+                        <a href="#/" class="fa">
+                            <span class="fa-stack fa-sm">
+                                <i class="fa fa-circle fa-stack-1x fa-inverse"></i>
+                                <i class="fa fa-question-circle fa-stack-2x"></i>
+                                <i class="fa fa-questionx fa-stack-2x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+    <div ng-view="" class="content"></div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <h4>Our Product</h4>
+                    <ul>
+                        <li>It's Legal</li>
+                        <li>It' Secure</li>
+                        <li>How It Works</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <h4>Questions</h4>
+                    <ul>
+                        <li>Tutorial</li>
+                        <li>Contact</li>
+                        <li>&nbsp;</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <h4>Social</h4>
+                    <ul>
+                        <li class="facebook">Facebook</li>
+                        <li class="twitter">Twitter</li>
+                        <li class="linkedin">LinkedIn</li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li>Terms of Use</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-md-4 copyright">
+                    <h3 class="logo-sm">eSign</h3>
+                    <span class="visible-sm-inline-block">- </span>
+                    <p>
+                        Copyright <i class="fa fa-copyright"></i> 2015. All rights reserved.
+                        <span class="debug hidden-xs hidden-sm hidden-md" style="display:none;">(lg)</span>
+                        <span class="debug hidden-xs hidden-sm hidden-lg" style="display:none;">(md)</span>
+                        <span class="debug hidden-xs hidden-md hidden-lg" style="display:none;">(sm)</span>
+                        <span class="debug hidden-sm hidden-md hidden-lg" style="display:none;">(xs)</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+    ! function(A, n, g, u, l, a, r) {
+        A.GoogleAnalyticsObject = l, A[l] = A[l] || function() {
+                (A[l].q = A[l].q || []).push(arguments)
+            }, A[l].l = +new Date, a = n.createElement(g),
+            r = n.getElementsByTagName(g)[0], a.src = u, r.parentNode.insertBefore(a, r)
+    }(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+    </script>
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/material.js"></script>
+    <script src="bower_components/bootstrap-material-design/dist/js/ripples.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/main.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/directives/esparallax.js"></script>
+    <script src="scripts/directives/esnavbar.js"></script>
+    <script src="scripts/directives/escounter.js"></script>
+    <script src="scripts/directives/esfadein.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/parallax.js"></script>
+    <!-- endbuild -->
+    <script src="//cdn.lukej.me/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.5/waypoints.min.js"></script>
+    <script>
+        $.material.init();
+    </script>
+
+</body>
+
+</html>
